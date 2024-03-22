@@ -24,7 +24,7 @@ function About() {
         <br/>
         It's been few years in programming world i learnt about java and Data 
         <br/>Structure and Algorithm .And now I am learning about web development 
-        <br/>and recently built few projects on MERN STACK and ASP.NET CORE MVC .
+        <br/>and recently built few projects on MERN STACK .
         <br/>
         <br/>
         I am eager to continue learning and expanding my skill set,
