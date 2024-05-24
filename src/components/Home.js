@@ -1,6 +1,6 @@
 import React from 'react'
 import Profile from '../assests/profile.jpg';
-import Resume from '../assests/Shweta_RESUME.pdf';
+import Resume from '../assests/resume.pdf';
 import Typed from 'typed.js';
 import { TiArrowDownOutline } from "react-icons/ti";
 import { FaLinkedin } from "react-icons/fa6";
@@ -48,7 +48,7 @@ function Home() {
       </div>
       <a href="#About" className="btn-box">More about Me</a>
       <a href={Resume} download="Resume" target='blank' rel="noreferrer" className="btn-box ">
-      <TiArrowDownOutline className='text-3xl mr-3 ' />Resume</a>
+      <TiArrowDownOutline className='text-3xl mr-3 ' /> Resume</a>
     </div>
     <div className="home_img flex flex-wrap">
       <img  src={Profile} alt="profile" className='element object-contains p-4'/>
