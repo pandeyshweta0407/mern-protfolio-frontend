@@ -5,10 +5,10 @@ function About() {
   return (
 
 
-<div className="about" id="About">
-      <div className="title" >About me </div> 
+<div  className="about" id="About">
+      <div className='about-upper'> <div className="title" >About me </div> </div>
 
-      <div className="about-content" >
+      <div className="about-bottom" >
        <div className ="about-left" ><img   src={AboutImg} alt="about" /></div>
       <div className="about-right">
         Passionate about technology and software development, 
