@@ -3,13 +3,13 @@ import React from 'react'
 function Navbar() {
   return (
     <header id="header" class="header">
-    <div className="logo">Portfolio</div>
-    <div className="navbar">
-      <a href="#Home">Home</a>
-      <a href="#About">About</a>
-      <a href="#Skill">Skill</a>
-      <a href="#Project">Projects</a>
-      <a href="#Contact">Contact</a>
+     <div class="header-upper"><div className="logo">Portfolio</div></div>
+    <div className="header-bottom">
+      <a className="link"  href="#Home">Home</a>
+      <a className="link" href="#About">About</a>
+      <a className="link" href="#Skill">Skill</a>
+      <a className="link" href="#Project">Projects</a>
+      <a className="link" href="#Contact">Contact</a>
     </div>
   </header>
   )
