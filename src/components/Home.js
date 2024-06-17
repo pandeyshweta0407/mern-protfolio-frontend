@@ -6,6 +6,7 @@ import { TiArrowDownOutline } from "react-icons/ti";
 import { FaLinkedin } from "react-icons/fa6";
 import { AiFillGithub } from "react-icons/ai";
 import '../App.css';
+import Navbar from './Navbar';
 
 function Home() {
 
@@ -34,13 +35,20 @@ function Home() {
   return (
 
     <section id="Home" className="home">
+
+    <div className='home-upper'>
+    <Navbar/>  
+    </div>
+
+    <div className='home-bottom'>
+      
     <div className="home-content">
       <h3>Hello, It's Me</h3>
       <h1>Shweta Pandey</h1>
       <h3>And I'm a <span ref={el}></span></h3>
       <p>
-        I am currently pursing <br />
-        Btech CSE
+        I am open to network <br/>
+         let's connect and work together
       </p>
       <div className="home-sci">
         <a href="https://github.com/pandeyshweta0407"><AiFillGithub /></a>
@@ -52,6 +60,7 @@ function Home() {
     </div>
     <div className="home_img flex flex-wrap">
       <img  src={Profile} alt="profile" className='element object-contains p-4'/>
+    </div>
     </div>
 
 

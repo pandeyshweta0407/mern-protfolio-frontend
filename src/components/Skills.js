@@ -20,8 +20,9 @@ function Skills() {
   return (
   
     <section className="skills" id="Skill">
-      <h1 className="skills_tittle text-white">My Skills</h1>
-      <div className='cards'>
+       <div className='skills-upper'>  <h1 className="title">My Skills</h1></div>
+       
+      <div className='skills-bottom'>
          
        <div className='card'>
         <div className='card-title'>Languages And Cousrework</div>
@@ -55,7 +56,7 @@ function Skills() {
        </div>
 
        <div className='card'>
-        <div className='card-tittle'>Tools</div>
+        <div className='card-title'>Tools</div>
           <div className='card-items'>
                <div className='card-item'><FaGitSquare className='icon' />git</div>
                <div className='card-item'><FaGithub className='icon' />github</div>

@@ -61,8 +61,11 @@ function Contact() {
 
   return (   
     <section className="contact" id="Contact">
-      <h2 className="contact-title">Contact Me</h2>
-      <div className="contact-content">
+      <div className='contact-upper'>
+      <div className="title">Contact Me</div>
+      </div>
+      <div className='contact-bottom'>
+  
       <div className="contact-left">
           <h4 className="contact-text">let's work together</h4>
           <div className="contact-list">
@@ -83,10 +86,11 @@ function Contact() {
             <input type="submit" value="submit" className ="send" id="send" onClick={sentUserData}  /> 
             </form>
         </div>
+        </div>
 
        
   
-      </div>
+  
   
     </section>
 

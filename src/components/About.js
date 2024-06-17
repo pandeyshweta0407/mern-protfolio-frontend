@@ -6,18 +6,11 @@ function About() {
 
 
 <div className="about" id="About">
-      <div className="about-topic" >
-      <h2 >About me</h2> 
-      </div> 
+      <div className="title" >About me </div> 
 
       <div className="about-content" >
-       <div className ="about-img" >
-    <img   src={AboutImg} alt="about" /> 
-    </div>
-      <div className="about-text">
-        I'm a 4th-year student at MERI College, currently pursuing my Btech (CSE)
-        <br/>
-        <br/>
+       <div className ="about-left" ><img   src={AboutImg} alt="about" /></div>
+      <div className="about-right">
         Passionate about technology and software development, 
         <br/>I am on a journey to enhance my skills and knowledge in this field.
         <br/>

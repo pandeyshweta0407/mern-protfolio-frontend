@@ -5,47 +5,83 @@
     box-sizing: border-box;
     font-family: "Exo 2", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
 }
-
-body{
-  color:rgb(30, 90, 144);
-  background-color: #1C1C27;
+ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow-x: scroll;
-  overflow-y: scroll;
+ }
+
+
+.title{  
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  padding: 10px;
+  margin: 10px;
+  @media (min-width: 100px) and (max-width: 1000px) {
+    font-size: 20px;
+  }  
 }
 
+.home{  
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;  
+  padding: 10px;
+  margin: 10px; 
+}
 
+.home-upper{ 
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-bottom{
+  position: relative;
+  top : 10px;
+  width: 100%;
+  gap:5em;
+ display: flex;
+ flex-direction: row; 
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ margin: 10px;
+ @media (min-width: 100px) and (max-width: 1000px) {
+  flex-direction: column; 
+}  
+}
 
 .header{
-  position: fixed;
-  top:0;
-  left: 0;
-  right: 0;
-    width: 100vmax;
-    margin: auto;
-    height: 100px;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     z-index:1 ;
-    margin-top: 10px;
+    padding: 10px;
 }
 
 .logo{
-     color: white;
+    color: white;
     font-size: 40px;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 700;
     cursor: default;
     opacity: 0;
     animation: slideRight 1s ease forwards;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      font-size: 20px;
+    }     
    
 }
 
@@ -61,14 +97,12 @@ body{
 }
 
 .navbar a{
-  color: white;
-  display: inline;
+    color: white;
+    display: inline;
     font-size: 20px;
     transition: .3s;
     text-decoration: none;
     font-weight: 200;
-    margin-right: 30px ;
-    margin-bottom: 50px;
     cursor: pointer;
     opacity: 0;
     animation: slideTop 1s ease forwards;   
@@ -76,6 +110,9 @@ body{
     padding: 10px;
     border: 2px solid rgb(149, 204, 199);
     border-radius: 10px;
+    @media (min-width: 100px) and (max-width: 1000px) {
+       font-size: 12px;
+    } 
 }
 
 
@@ -96,36 +133,20 @@ body{
 }
 
 
-.home{  
-  position: relative;
-  left: -300px;
-  width: 100%;
-  height: 100vh;
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  @media (min-width: 100px) and (max-width: 1000px) {
-    position: relative;
-    left : 200px;
-    margin-top: 200px;
-  }  
-}
+
  
 .home_img img{
-  position: absolute;
-  top : 100px;
-  right: -100px;
-  padding:  20px;
-  margin: 20px;
   width:500px;
   height: 550px;
   border-radius: 50%;
-  @media (min-width: 100px) and (max-width: 1000px) {
+  padding: 10px;
+  margin: 10px;
+  @media (min-width: 100px) and (max-width: 1000px)  {
     width:300px;
-    height: 350px;
- }  
+    height: 300px;
+   }
 }
+
 .element{
   animation-name: float;
   animation-duration: 2s;
@@ -174,10 +195,14 @@ body{
     opacity: 0;
     animation: slideRight 1s ease forwards;
     animation-delay: 1s;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      font-size: 35px;
+    }  
 }
 .home-content h3 span{
    color: #0ef;
-   font-size: 40px;
+   font-size: 25px;
+ 
  }
 
 .home-content p{
@@ -239,99 +264,107 @@ body{
     0 0 50px cyan,  0 0 100px cyan , 0 0 200px cyan ;
  }
 
+
+
+
+
  .about{
-  position: relative;
-  width: 100%;
-   height: 100vh;
+   width: 100%;
    display: flex;
    flex-direction: column;
    justify-content: center;
-   align-items: center;
-   @media (min-width: 100px) and (max-width: 1000px)  {
-    position: relative;
-    left : 400px;
-   }
+   align-items: center;  
+  }
+
+ .about-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      flex-direction: column-reverse;
+    }  
  }
 
-
-
- .about-topic{
-  color: white;
-  text-align:  center;
-  font-size:  40px;
-}
-
- .about-img {
-    padding:  20px;
+ .about-left {
     width:500px;
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
-  margin-right: 50px;
+    margin-right: 50px;
     @media (min-width: 100px) and (max-width: 1000px)  {
       width:300px;
       height: 300px;
      }
  }
  
- .about-content{
-  margin: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
- }
+ 
 
- .about-text{
+ .about-right{
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 20px;
-   color: aliceblue;
+  padding: 10px;
+  margin: 10px;
+  @media (min-width: 100px) and (max-width: 1000px)  {
+  font-size:12px ;
+   }
+  
+
  }
 
   .skills{
-    position: relative;
     width: 100%;
     color:#219C90  ;
-    display:inline-block;
+    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:10px;
     font-weight: 900;
-    @media (min-width: 100px) and (max-width: 1000px)  {
-      position: relative;
-      left : 400px
-     }
-  
+    @media (min-width: 100px) and (max-width: 1000px) {
+      font-size: 20px;
+    } 
   }
 
-  .skills_tittle{
-   
-    text-align: center;
-    font-size: 40px;
-    font-weight: 900;
-    margin-top: 20px;
- }
+ 
 
- .cards{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
- }
+  .skills-bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      flex-direction: column;
+    } 
+  }
+
+
 
 .card{
+  width: 400px;
+  height: 400px;
    display: flex;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-   width: 400px;
-   height: 400px;
+   gap:10px;
    border: 2px solid rgb(149, 204, 199);
     border-radius: 20px;
-   margin: 50px;
    background: #111928D4;
+   @media (min-width: 100px) and (max-width: 1000px) {
+    width: 300px;
+   height: 300px;
+   font-size: 10px;
+  } 
 }
 
 .card:hover{
@@ -340,14 +373,22 @@ body{
  
 .card-title{
   font-size: 20px;
-  color: #B1B2B3;
-  width: 300px;
- height: 50px;
+  color: #86babd;
+  gap:10px;
+  margin: 10px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: 100px) and (max-width: 1000px) { 
+   font-size: 15px;
+   gap:5px;
+   margin: 5px;
+   padding: 5px;
+  } 
 }
+
   .card-items{
     display: flex;
     flex-direction: row;
@@ -356,13 +397,18 @@ body{
     justify-content: center;
     width: 300px;
     height: 300px;
-    margin: 10px;
+    gap:5px;   
+   
   }
 
   .icon{
     color: #0ef;
     font-size: 25px;
-    margin-right:5px ;
+    @media (min-width: 100px) and (max-width: 1000px) { 
+      font-size: 15px;
+     
+   
+     } 
   }
 
   .card-item{
@@ -373,33 +419,23 @@ body{
     justify-content: center;
     border: 1px solid white;
     border-radius: 10px;
-    margin:5px;
-    padding: 5px;
+   padding: 5px;
+   margin: 5px;
     color: #B1B2B3;
     font-size: 20px;
-    width: auto;
+    @media (min-width: 100px) and (max-width: 1000px) { 
+      font-size: 15px;
+     }  
   }
 
 
 
   .project{
-    position: relative;
+    width: 100%;
      display: flex;
      flex-direction: column;
      justify-content: center;
-     align-items: center;
-     width: 100%;
-     @media (min-width: 100px) and (max-width: 1000px)  {
-      position: relative;
-      left : 400px
-     }
-  }
-
-  .project_title{
-    font-size: 50px;
-    margin-top: 30px;
-    color: rgb(199, 211, 203);
-
+     align-items: center; 
   }
 
   .project_content{
@@ -428,42 +464,80 @@ body{
   .project_img{
     font-size: 25px;
     width: 400px;
-    margin: 20px;
+    margin: 10px;
     border: 2px solid rgb(52, 179, 204);
     border-radius: 10px;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      width: 300px;
+     
+      } 
   }
 
   .project_topics{
     font-size: 25px;
     color:#219C90  ;
-   
+    color: white;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      font-size: 15px;
+      } 
   }
+
+
 
   .contact{
-    position: relative;
     width: 100%;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media (min-width: 100px) and (max-width: 1000px)  {
-      position: relative;
-      left : 400px
-     }
-   
   }
 
-  .contact-title{
-    font-size: 50px;
-    margin-top: 30px;
+  .contact-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap : 30px;
+    @media (min-width: 100px) and (max-width: 1000px) {
+     flex-direction: column;
+    } 
+  }
+
+  .contact-left{
     color: white;
+     width: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 10px;
+     margin: 10px;
   }
+ 
+   .contact-right{
+     color: white;
+     width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin: 10px;
+      
+   }
 
+
+
+ 
   .contact-text{
     font-size: 35px;
     margin-top: 30px;
-    font-size: 30px;
+ 
     color: #E5D4FF;
+    @media (min-width: 100px) and (max-width: 1000px) {
+   
+      font-size: 20px;
+      } 
   }
   .contact-list{
     display: flex;
@@ -481,52 +555,42 @@ body{
     color: #E5D4FF;
   }
 
-  .contact-left{
-    width: 600px;
-    height: 400px;
-    margin: 40px;
+ 
+
+  
+  .contact-right form {
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    color: rgb(157, 151, 140);
+    border: 2px solid rgb(149, 204, 199);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
- }
-
-  .contact-right{
-     width: 550px;
-     height: 520px;
-     margin: 40px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     border: 2px solid #0ef;
-     border-radius: 40px;
-     @media (min-width: 100px) and (max-width: 700px){
-      display: inline;
-     }
-  }
-
-  .contact-right form{
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    @media (min-width: 100px) and (max-width: 1000px) {
+      width: 400px;
+      height: 400px;
+      font-size: 20px;
+      } 
   }
 
   .contact-right form input{
-    width: 500px;
-    font-size: 25px;
-    border-radius: 10px;
+    font-size: 20px;
+    width: 400px;
+    height: 50px;
+    color: white;
     background-color: transparent;
-    color: rgb(157, 151, 140);
-    margin: 5px;
-    margin-left: 30px;
-    padding: 5px ;
-    color: aliceblue;
     border: 2px solid rgb(149, 204, 199);
     border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    @media (min-width: 100px) and (max-width: 1000px) {
+      width: 300px;
+      height: 50px;
+     font-size: 20px;
+     } 
   }
 
   .contact-right form input:hover{
@@ -534,17 +598,20 @@ body{
   }
 
   .contact-right form textarea{
-  
-    width: 500px;
-    font-size: 25px;
-    border-radius: 10px;
+    font-size: 20px;
+    width: 400px;
+    height: 100px;
     background-color: transparent;
     border: 2px solid rgb(149, 204, 199);
     border-radius: 20px;
-    color: aliceblue;
-    margin: 5px;
-    margin-left: 30px;
-    padding: 5px ;
+   padding: 10px;
+   margin: 10px;
+  
+    @media (min-width: 100px) and (max-width: 1000px) {
+      width: 300px;
+      height: 100px;
+      font-size: 20px;
+      } 
   }
 
   .contact-right form textarea:hover{
@@ -560,31 +627,29 @@ body{
     background-color: rgb(27, 169, 32) ;  
   }
 
-  .contact-content{
-    display: flex;
-    justify-content: space-around;
-  }
+
 
   .footer{
     position: relative;
     width: 100%;
     height: 100px;
-   
     display: flex;
     justify-content: center;
-    align-items: center;
-    @media (min-width: 100px) and (max-width: 1000px)  {
-      position: relative;
-      left : 400px
-     }
+    align-items: center; 
   }
 
   .footer-text{
-  font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: white;
+   font-size: 20px;
+   @media (min-width: 100px) and (max-width: 1000px) {
+  
+    font-size: 10px;
+    } 
   }
 
   html{
     scroll-behavior: smooth;
   }
-
-  

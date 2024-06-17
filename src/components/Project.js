@@ -14,7 +14,7 @@ import Weatherapp10 from "../assests/weatherapp1.png";
 function Project() {
   return (
     <section className="project" id="Project">
-    <div className="project_title">Latest Projects</div>
+    <div className="title">Latest Projects</div>
     <div className="project_content">
       <a className="project_link" href="https://noteappwriteyournote.netlify.app/">
         <img className="project_img" src={Note1} alt="" />

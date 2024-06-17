@@ -4,7 +4,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Home from "./components/Home";
 import Main from './components/Main';
-import Navbar from './components/Navbar';
+
 import Project from './components/Project';
 import Skills from './components/Skills';
 
@@ -17,7 +17,7 @@ function App() {
         <Main/>
        </div>
        <div className='relative'>
-        <Navbar/>
+       
         <Home/>
         <About/>
         <Skills/>
@@ -28,16 +28,7 @@ function App() {
       </div>
     </div>
 
-    // <div className="App"> 
-    // {/* <Main/> */}
-    // <Navbar/>
-    // <Home/>
-    // <About/>
-    // <Skills/>
-    // <Project/>
-    // <Contact/>
-    // <Footer/>
-    // </div>
+  
   );
 }
 
